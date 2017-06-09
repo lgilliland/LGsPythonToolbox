@@ -1,0 +1,51 @@
+<metadata xml:lang="en">
+	<Esri>
+		<CreaDate>20170425</CreaDate>
+		<CreaTime>15493700</CreaTime>
+		<ArcGISFormat>1.0</ArcGISFormat>
+		<ArcGISstyle>ISO 19139 Metadata Implementation Specification</ArcGISstyle>
+		<SyncOnce>TRUE</SyncOnce>
+		<ModDate>20170510</ModDate>
+		<ModTime>11400500</ModTime>
+		<scaleRange>
+			<minScale>150000000</minScale>
+			<maxScale>5000</maxScale>
+		</scaleRange>
+		<ArcGISProfile>ISO19139</ArcGISProfile>
+	</Esri>
+	<tool name="ShapefileToKMZ" displayname="Shapefile to KMZ Tool" toolboxalias="lgtools" xmlns="">
+		<arcToolboxHelpPath>c:\program files (x86)\arcgis\desktop10.4\Help\gp</arcToolboxHelpPath>
+		<parameters>
+			<param name="in_shapefiles" displayname="Shapefile to Process" type="Required" direction="Input" datatype="Multiple Value" expression="in_shapefiles;in_shapefiles...">
+				<dialogReference>&lt;DIV STYLE="text-align:Left;"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;One or more shapefiles that should be converted.&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</dialogReference>
+			</param>
+			<param name="out_folder" displayname="Output Folder" type="Required" direction="Input" datatype="Folder" expression="out_folder">
+				<dialogReference>&lt;DIV STYLE="text-align:Left;"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;The folder to save the new files to.&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</dialogReference>
+			</param>
+		</parameters>
+		<summary>&lt;DIV STYLE="text-align:Left;"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;Creates a KMZ file based on the shapefile passed in.&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</summary>
+		<scriptExamples>
+			<scriptExample>
+				<title>Python Example</title>
+				<para>&lt;DIV STYLE="text-align:Left;"&gt;&lt;P&gt;&lt;SPAN&gt;arcpy.ShapefileToKMZ_lgtools(in_shapefiles="E:/Code/GeneralAddin/_Shapefiles/BOTSWANA.shp", out_folder="E:/Code/GeneralAddin/_Shapefiles/KMZ")&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;</para>
+			</scriptExample>
+		</scriptExamples>
+		<usage>&lt;DIV STYLE="text-align:Left;"&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;Accepts one to many shapefiles and will convert each of them (giving each a similar name) to a corresponding .KMZ file that can be read by Google Earth, etc.&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;</usage>
+	</tool>
+	<dataIdInfo>
+		<idCitation>
+			<resTitle>Shapefile to KMZ Tool</resTitle>
+		</idCitation>
+		<idAbs>&lt;DIV STYLE="text-align:Left;"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;Creates a KMZ file based on the shapefile passed in.&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</idAbs>
+	</dataIdInfo>
+	<distInfo>
+		<distributor>
+			<distorFormat>
+				<formatName>ArcToolbox Tool</formatName>
+			</distorFormat>
+		</distributor>
+	</distInfo>
+	<mdHrLv>
+		<ScopeCd value="005"/>
+	</mdHrLv>
+</metadata>
